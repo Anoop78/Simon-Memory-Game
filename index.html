@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="game-wrapper">
+    <h1 class="title">Simon Memory Game</h1>
+
+    <div class="game-card">
+      <div class="info-bar">
+        <div>Level: <span id="level">0</span></div>
+        <div>Best: <span id="best-score">0</span></div>
+      </div>
+
+      <h2 id="status-text">Press Start to play</h2>
+
+      <div class="btn-container">
+        <div class="line">
+          <div class="btn red" id="red"></div>
+          <div class="btn green" id="green"></div>
+        </div>
+        <div class="line">
+          <div class="btn yellow" id="yellow"></div>
+          <div class="btn purple" id="purple"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn" class="main-btn">Start Game</button>
+      </div>
+
+      <p class="hint">Repeat the pattern as long as you can 💡</p>
+    </div>
+
+    <div class="action-buttons">
+      <button id="restart-btn" class="action-btn">Restart</button>
+      <button id="quit-btn" class="action-btn quit">Quit</button>
+    </div>
+
+    <!-- Left: Instructions -->
+    <div class="side-section left-section">
+      <h3>Instructions</h3>
+      <ul>
+        <li>Press <strong>Start</strong> to begin the game.</li>
+        <li>Watch carefully as colors flash in a sequence.</li>
+        <li>Click the buttons in the same order.</li>
+        <li>Each correct round increases your level.</li>
+        <li>Press Restart anytime for a new game.</li>
+        <li>Press Quit to stop playing.</li>
+      </ul>
+    </div>
+
+    <!-- Right: Benefits -->
+    <div class="side-section right-section">
+      <h3>Benefits</h3>
+      <ul>
+        <li>Improves memory power.</li>
+        <li>Boosts concentration & focus.</li>
+        <li>Enhances pattern recognition.</li>
+        <li>Fun way to train your brain.</li>
+      </ul>
+    </div>
+
+    <!-- Feedback Section -->
+<div class="feedback-section">
+  <h3>Give Your Feedback</h3>
+  <input type="text" id="fb-name" class="fb-input" placeholder="Your Name">
+  <textarea id="fb-message" class="fb-textarea" placeholder="Write your feedback here..."></textarea>
+  <button id="fb-submit" class="fb-btn">Submit Feedback</button>
+  <p id="fb-status" class="fb-status"></p>
+</div>
+
+    <footer>
+      <p>Made with ❤️ by Anoop • Simon Game</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
